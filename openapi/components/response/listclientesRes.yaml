@@ -1,0 +1,47 @@
+description: Ok
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schema/response/listclienteRes.yaml
+    examples:
+      Device-Register-Prueba-01:
+        summary: Cliente registrado prueba
+        value:
+          status: 'OK'    
+          data:
+            -
+              customerId: '72d239b1-5a44-49bb-be2c-df3d1099d3cc'
+              name: 'Joshua'
+              lastname: 'Villena'
+              age: 27
+              dateOfBirth: '1995-06-13'
+              probDateOfDeath:
+                min: '2071-12-13'
+                max: '2072-12-13'
+                year: '2072'
+            -
+              customerId: '9b99bde5-49f7-412b-9eee-0c6d0b03c1e7'
+              name: 'Andre'
+              lastname: 'Diaz'
+              age: 27
+              dateOfBirth: '1995-06-13'
+              probDateOfDeath:
+                min: '2071-12-13'
+                max: '2072-12-13'
+                year: '2072'
+            -
+              customerId: 'db95eaca-638c-48f9-aedb-3d12e20c74c0'
+              name: 'Joshua Andre'
+              lastname: 'Villena Diaz'
+              age: 27
+              dateOfBirth: '1995-06-13'
+              probDateOfDeath:
+                min: '2071-12-13'
+                max: '2072-12-13'
+                year: '2072'
+
+headers:
+  Access-Control-Allow-Origin:
+    schema:
+      type: "string"

@@ -1,0 +1,20 @@
+type: object
+properties:
+  name:
+    type: string
+    description: Nombre del cliente
+    maxLength: 100
+    example: Joshua Andre
+  lastname:
+    type: string
+    description: Apellido del cliente
+    maxLength: 100
+    example: Villena Diaz
+  age:
+    type: number
+    description: Edad del cliente
+    example: 27
+  dateOfBirth:
+    type: string
+    description: Fecha de nacimiento del cliente
+    example: '1995-06-13'

@@ -1,0 +1,22 @@
+type: object
+properties:
+  status:
+    type: string
+    description: 'Estado del servidor'
+    example: 'ok'
+  data:
+    type: object
+    description: KPI de clientes
+    properties:
+      average:
+        type: number
+        description: 'Promedio de edad de los clientes'
+        example: 29.8947
+      deviation:
+        type: number
+        description: 'Desviación estándar'
+        example:  21.8244
+      customers:
+        type: number
+        description: 'Cantidad total de clientes'
+        example: 19

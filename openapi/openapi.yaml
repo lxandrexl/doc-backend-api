@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: API Customers
+  description: Este servicio tiene la funcionalidad de gestionar una aplicacion.
+  version: 1.0.0
+  contact:
+    name: Joshua Villena Diaz
+    email: jovillenad@gmail.com
+    x-role: Analista Backend
+  x-logo:
+    url: https://www.seekpng.com/png/detail/192-1923013_transparent-png-github-logo.png
+    altText: Github <3
+  x-api-catalog-categories:
+    type: API
+    ramo: Tecnologia
+    owner: Joshua 
+    platform: AWS
+  x-api-catalog-tags: 'Clientes'
+  x-security: 'AWS Signature'
+servers:
+  - url: 'http://localhost:4010/DESA/backend-api/v1'
+    description: Servidor Local
+  - url: 'Mi.cuenta.AWS.esta.fallando.com'
+    description: No puedo subir a la nube mis servicios AWS =(
+tags:
+  - name: Clientes
+    description: Servicios para gestionar a los clientes.
+
+paths:
+  /creacliente:
+    $ref: paths/cliente@create.yaml
+  /listclientes:
+    $ref: paths/cliente@list.yaml
+  /kpideclientes:
+    $ref: paths/cliente@kpi.yaml

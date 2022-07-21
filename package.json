@@ -1,0 +1,22 @@
+{
+  "name": "arq-rimac-riesgos-patrimoniales",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "openapi preview-docs --port 8083 openapi/openapi.yaml",
+    "build": "openapi bundle -o dist/openapi.yaml",
+    "build-html": "redoc-cli bundle ./dist/openapi.yaml --output ./dist/openapi.html -t ./docs/index.html",
+    "test": "openapi validate"
+  },
+  "dependencies": {
+    "@redocly/openapi-cli": "^0.12.16"
+  },
+  "devDependencies": {
+    "@redocly/openapi-cli": "0.12.7"
+  }
+}

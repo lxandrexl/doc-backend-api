@@ -1,0 +1,16 @@
+post:
+  summary: Registrar cliente
+  description: Endpoint para registrar clientes.
+  tags:
+    - Clientes
+  requestBody:
+    $ref: ../components/request/creaclienteReq.yaml
+  responses:
+    '200':
+      $ref: ../components/response/creaclienteRes.yaml
+    '400':
+      $ref: ../components/response/BadRequestResponse.yaml
+    '500':
+      $ref: ../components/response/InternalServerErrorResponse.yaml
+    default:
+      $ref: ../components/response/UnexpectedErrorResponse.yaml

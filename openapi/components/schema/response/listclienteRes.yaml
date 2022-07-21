@@ -1,0 +1,47 @@
+type: object
+properties:
+  status:
+    type: string
+    description: Estado del servidor
+    example: 'ok'
+  data:
+    type: array
+    description: Lista de clientes
+    items:
+      type: object
+      properties:
+        customerId:
+          type: string
+          description: 'Hash unico por cada cliente'
+          example: 72d239b1-5a44-49bb-be2c-df3d1099d3cc
+        name:
+          type: string
+          description: 'Nombres del cliente'
+          example: 'Joshua Andre'
+        lastname:
+          type: string
+          description: 'Apellidos del cliente'
+          example: 'Villena Diaz'
+        age:
+          type: number
+          description: 'Edad del cliente'
+          example: 27
+        dateOfBirth:
+          type: string
+          description: 'Fecha de nacimiento del cliente'
+          example: '1995-06-13'
+        probDateOfDeath:
+          type: object
+          properties:
+            min:
+              type: string
+              description: 'Fecha minima de posible fallecimiento'
+              example: '2071-12-13'
+            max:
+              type: string
+              description: 'Fecha maxima de posible fallecimiento'
+              example: '2072-12-13'
+            year:
+              type: string
+              description: 'Año posible de fallecimiento'
+              example: '2072'

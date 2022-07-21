@@ -1,0 +1,14 @@
+get:
+  summary: Kpi clientes
+  description: Endpoint de KPI clientes.
+  tags:
+    - Clientes
+  responses:
+    '200':
+      $ref: ../components/response/kpideclientesRes.yaml
+    '400':
+      $ref: ../components/response/BadRequestResponse.yaml
+    '500':
+      $ref: ../components/response/InternalServerErrorResponse.yaml
+    default:
+      $ref: ../components/response/UnexpectedErrorResponse.yaml

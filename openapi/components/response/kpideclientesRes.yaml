@@ -1,0 +1,20 @@
+description: Ok
+content:
+  application/json:
+    schema:
+      allOf:
+        - $ref: ../schema/response/kpideclienteRes.yaml
+    examples:
+      Device-Register-Prueba-01:
+        summary: Cliente registrado prueba
+        value:
+          status: 'OK'    
+          data:
+            average: 29.8947
+            deviation: 21.8244
+            customers: 19
+
+headers:
+  Access-Control-Allow-Origin:
+    schema:
+      type: "string"
